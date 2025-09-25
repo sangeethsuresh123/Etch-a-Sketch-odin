@@ -4,8 +4,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: lightgreen;
-  padding: 1px;
+  background-color: white;
+  border: 10px solid orange;
 }
 
 .row {
@@ -13,11 +13,11 @@
   justify-content: space-between;
   flex-grow: 1;
   gap: 1px;
-  background-color: lightblue;
+  background-color: white;
   padding: 1px;
 }
 
 .square {
-  background-color: red;
+  background-color: black;
   flex-grow: 1;
 }
