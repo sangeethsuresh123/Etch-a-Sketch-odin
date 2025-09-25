@@ -35,7 +35,13 @@ function createGrid() {
   squares.forEach(item => {
     item.addEventListener('mouseover', () => {
       console.log('Element hovered!');
-      item.style.backgroundColor = 'white';
+      let red = Math.floor(Math.random() * 256);
+      let blue = Math.floor(Math.random() * 256);
+      let green = Math.floor(Math.random() * 256);
+      item.style.backgroundColor = `rgb(${red},${green},${blue})`;
+      if (!item.style.opacity) item.style.opacity = '1';
+      opacity = parseFloat(item.style.opacity);
+      item.style.opacity = opacity - 0.1;
     });
   });
 }
